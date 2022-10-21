@@ -1,0 +1,108 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+    background-color: #eaeaea;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 100px 100px;
+    grid-auto-columns: 200px;
+    grid-template-areas:
+        "one one"
+        "two three"
+        "two three"
+        "four four";
+    place-content: center;
+}
+
+.box1 {
+    grid-area: one;
+    text-align: center;
+}
+
+.box2 {
+    grid-area: three;
+}
+
+.box3 {
+    grid-area: two;
+}
+
+.box4 {
+    grid-area: four;
+    text-align: center;
+    font-size: 25px;
+}
+
+button {
+    width: 150px;
+    text-align: center;
+    margin: 10px 30px;
+    background: #00abb3;
+    background-image: -webkit-linear-gradient(top, #00abb3, #2980b9);
+    background-image: -moz-linear-gradient(top, #00abb3, #2980b9);
+    background-image: -ms-linear-gradient(top, #00abb3, #2980b9);
+    background-image: -o-linear-gradient(top, #00abb3, #2980b9);
+    background-image: linear-gradient(to bottom, #00abb3, #2980b9);
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+input {
+    margin: 30px;
+    width: 120px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: #B2B2B2;
+}
+
+#result{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #00ABB3;
+    height: 50px;
+    text-align: center;
+}
+
+@media (max-width: 400px){
+    .main-container {
+        background-color: #eaeaea;
+        display: grid;
+        gap: 10px;
+        grid-template-rows: 110px;
+        grid-auto-columns: 300px;
+        grid-template-areas:
+            "one"
+            "three"
+            "three"
+            "two"
+            "four";
+        place-content: center;
+    } 
+
+    input{
+        margin: 20px 90px;
+    }
+
+    button{
+        margin: 10px 80px;
+    }
+}
