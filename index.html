@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <title>Manipulación del DOM - Curso Práctico de JavaScript</title>
+</head>
+
+<body>
+    <main>
+        <section class="main-container">
+
+                <div class="item box1">
+                    <h1>Calculadora Básica</h1>
+                </div>
+    
+                <div class="item box2">
+                    <input id="calculo1" type="text" placeholder="0" />
+                    <input id="calculo2" type="text" placeholder="0" />
+                </div>
+    
+                <div class="item box3">
+                    <button id="btnSumar" onclick="btnSumarOnClick()">Sumar</button>
+                    <button id="btnRestar" onclick="btnRestarOnClick()">Restar</button>
+                    <button id="btnMultiplicar" onclick="btnMultiplicarOnClick()">Multiplicar</button>
+                    <button id="btnDividir" onclick="btnDividirOnClick()">Dividir</button>
+                </div>
+                <div class="item box4">
+                    <p>Resultado:</p>
+                    <p id="result"></p>
+                </div>
+    </main>
+
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
